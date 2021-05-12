@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'screens/loginScreen.dart';
+
 void main() {
   runApp(Tereta());
 }
@@ -7,6 +9,8 @@ void main() {
 class Tereta extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return MaterialApp(
+      home: LoginScreen(),
+    );
   }
 }
