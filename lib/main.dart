@@ -11,7 +11,13 @@ class Terera extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Welcome(),
+      title: 'Terera Start App',
+      theme: ThemeData.dark(),
+      initialRoute: LoginScreen.id,
+      routes: {
+        Welcome.id: (context) => Welcome(),
+        LoginScreen.id: (context) => LoginScreen(),
+      },
     );
   }
 }
