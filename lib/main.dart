@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 
 import 'screens/loginScreen.dart';
+import 'screens/welcomeScreen.dart';
 
 void main() {
-  runApp(Tereta());
+  runApp(Terera());
 }
 
-class Tereta extends StatelessWidget {
+class Terera extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: LoginScreen(),
+      home: Welcome(),
     );
   }
 }
