@@ -11,6 +11,7 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.black54,
         leading: Expanded(
           child: Image(
             image: AssetImage('images/icon2.png'),
@@ -22,38 +23,46 @@ class _LoginScreenState extends State<LoginScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Image(
-              image: AssetImage('images/logo3.png'),
-            ),
             Padding(
-              padding: const EdgeInsets.all(40.0),
+              padding: const EdgeInsets.only(left: 40.0, right: 40.0),
               child: Text(
                 'Login using your @sign credential...',
                 style: TextStyle(
                   fontSize: 20.0,
                 ),
-                textAlign: TextAlign.center,
+                //textAlign: TextAlign.center,
               ),
             ),
-            Expanded(
+            Container(
               child: Padding(
                 padding: const EdgeInsets.all(40.0),
                 child: TextFormField(
                   decoration: InputDecoration(
                     labelText: '@sign...',
-                    border: UnderlineInputBorder(),
+                    labelStyle: TextStyle(fontSize: 18.0),
+                    focusedBorder: OutlineInputBorder(
+                      borderSide:
+                          const BorderSide(color: Colors.white, width: 2.0),
+                      borderRadius: BorderRadius.circular(30.0),
+                    ),
                   ),
                 ),
               ),
             ),
-            Expanded(
-              child: Padding(
-                padding: const EdgeInsets.all(40.0),
+            Padding(
+              padding: const EdgeInsets.only(left: 40.0, right: 40.0),
+              child: Container(
+                width: MediaQuery.of(context).size.width,
                 child: ElevatedButton(
                   onPressed: () {
                     Navigator.pop(context);
                   },
-                  child: Text('Login'),
+                  child: Text(
+                    'Login',
+                    style: TextStyle(
+                      fontSize: 20.0,
+                    ),
+                  ),
                 ),
               ),
             ),

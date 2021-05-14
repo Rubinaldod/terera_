@@ -7,6 +7,7 @@ class Welcome extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.black54,
         leading: Expanded(
           child: Image(
             image: AssetImage('images/icon2.png'),
