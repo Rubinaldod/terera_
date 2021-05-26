@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:terera_starter/widgets/middleScroll.dart';
@@ -111,6 +112,32 @@ class _DashboardState extends State<Dashboard> {
                                           style: TextStyle(
                                             fontWeight: FontWeight.normal,
                                             fontSize: 15,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Container(
+                                        alignment:
+                                            AlignmentDirectional.topStart,
+                                        margin:
+                                            EdgeInsets.only(top: 8, left: 10),
+                                        child: RichText(
+                                          text: TextSpan(
+                                            text: 'Upgrade',
+                                            style: TextStyle(
+                                              color: Colors.blue,
+                                              decoration:
+                                                  TextDecoration.underline,
+                                              fontWeight: FontWeight.normal,
+                                              fontSize: 12,
+                                            ),
+                                            recognizer: TapGestureRecognizer()
+                                              ..onTap = () async {
+                                                final url =
+                                                    'https://www.google.com';
+                                              },
                                           ),
                                         ),
                                       ),
