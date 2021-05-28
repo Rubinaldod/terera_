@@ -17,7 +17,7 @@ class _HomePageState extends State<HomePage> {
         child: Scaffold(
           extendBody: true,
           backgroundColor: Colors.transparent,
-          bottomNavigationBar: LowNavBar().buildFloatingNavbar(),
+          //bottomNavigationBar: LowNavBar().buildFloatingNavbar(),
           body: SingleChildScrollView(
             child: Center(
               child: Container(

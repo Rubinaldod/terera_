@@ -19,7 +19,7 @@ class _DashboardState extends State<Dashboard> {
         child: Scaffold(
           extendBody: true,
           backgroundColor: Colors.transparent,
-          bottomNavigationBar: LowNavBar().buildFloatingNavbar(),
+          //bottomNavigationBar: LowNavBar().buildFloatingNavbar(),
           body: SingleChildScrollView(
             child: Center(
               child: Container(
