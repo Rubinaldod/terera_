@@ -15,7 +15,7 @@ class topScroll extends StatelessWidget {
             fit: BoxFit.cover,
           ),
           borderRadius: BorderRadius.circular(20)),
-      width: 150,
+      width: 130,
       child: Container(
         margin: EdgeInsets.only(top: 100, left: 10),
         child: Stack(

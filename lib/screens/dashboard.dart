@@ -1,7 +1,6 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:terera_starter/widgets/BottomNavBar.dart';
 
 // import 'package:terera_starter/widgets/middleScroll.dart';
 // import 'package:terera_starter/widgets/topScroll.dart';
@@ -19,7 +18,6 @@ class _DashboardState extends State<Dashboard> {
         child: Scaffold(
           extendBody: true,
           backgroundColor: Colors.transparent,
-          //bottomNavigationBar: LowNavBar().buildFloatingNavbar(),
           body: SingleChildScrollView(
             child: Center(
               child: Container(

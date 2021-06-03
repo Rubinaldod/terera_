@@ -48,7 +48,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
                               Text(
-                                'Rubinaldo Domingos',
+                                'Rubinaldo Domingo',
                                 style: TextStyle(
                                   fontSize: 20,
                                   fontWeight: FontWeight.w400,

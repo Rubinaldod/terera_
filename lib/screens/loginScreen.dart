@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'homePage.dart';
+
 class LoginScreen extends StatefulWidget {
   static final id = 'login';
   @override
@@ -55,7 +57,8 @@ class _LoginScreenState extends State<LoginScreen> {
                 width: MediaQuery.of(context).size.width,
                 child: ElevatedButton(
                   onPressed: () {
-                    Navigator.pop(context);
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => HomePage()));
                   },
                   child: Text(
                     'Login',
