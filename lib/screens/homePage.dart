@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:terera_starter/screens/profileScren.dart';
-import 'file:///C:/Users/user/Documents/projcts/terera_starter/lib/screens/body.dart';
+import 'package:terera_starter/screens/profileScreen.dart';
 import 'package:terera_starter/widgets/middleScroll.dart';
 import 'package:terera_starter/widgets/topScroll.dart';
+import 'package:terera_starter/screens/body.dart';
 
 import 'pScreen.dart';
 
@@ -14,7 +14,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   int pageIndex = 0;
-  List<Widget> PageList = <Widget>[
+  List<Widget> pageList = <Widget>[
     Body(),
     profileScreen(),
   ];
@@ -25,7 +25,7 @@ class _HomePageState extends State<HomePage> {
         child: Scaffold(
           extendBody: true,
           backgroundColor: Colors.transparent,
-          body: PageList[pageIndex],
+          body: pageList[pageIndex],
           bottomNavigationBar: BottomNavigationBar(
             currentIndex: pageIndex,
             type: BottomNavigationBarType.fixed,
@@ -38,7 +38,7 @@ class _HomePageState extends State<HomePage> {
               BottomNavigationBarItem(
                   icon: Icon(Icons.home_filled), label: "Home"),
               BottomNavigationBarItem(
-                  icon: Icon(Icons.account_circle_outlined), label: "Profle"),
+                  icon: Icon(Icons.account_circle_outlined), label: "Profile"),
               BottomNavigationBarItem(
                   icon: Icon(Icons.search), label: "Search"),
               BottomNavigationBarItem(
