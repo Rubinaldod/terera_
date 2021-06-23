@@ -52,22 +52,22 @@ class _LoginScreenState extends State<LoginScreen> {
                 //textAlign: TextAlign.center,
               ),
             ),
-            Container(
-              child: Padding(
-                padding: const EdgeInsets.all(40.0),
-                child: TextFormField(
-                  decoration: InputDecoration(
-                    labelText: '@sign...',
-                    labelStyle: TextStyle(fontSize: 18.0),
-                    focusedBorder: OutlineInputBorder(
-                      borderSide:
-                          const BorderSide(color: Colors.white, width: 2.0),
-                      borderRadius: BorderRadius.circular(30.0),
-                    ),
-                  ),
-                ),
-              ),
-            ),
+            // Container(
+            //   child: Padding(
+            //     padding: const EdgeInsets.all(40.0),
+            //     child: TextFormField(
+            //       decoration: InputDecoration(
+            //         labelText: '@sign...',
+            //         labelStyle: TextStyle(fontSize: 18.0),
+            //         focusedBorder: OutlineInputBorder(
+            //           borderSide:
+            //               const BorderSide(color: Colors.white, width: 2.0),
+            //           borderRadius: BorderRadius.circular(30.0),
+            //         ),
+            //       ),
+            //     ),
+            //   ),
+            // ),
             Padding(
               padding: const EdgeInsets.only(left: 40.0, right: 40.0),
               child: Container(
@@ -78,6 +78,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       context: context,
                       atClientPreference: atClientPreference,
                       domain: MixedConstants.ROOT_DOMAIN,
+                      appColor: Colors.white,
                       onboard: (value, atsign) {
                         atSign = atsign;
                         ClientSdkService.getInstance().atsign = atsign;

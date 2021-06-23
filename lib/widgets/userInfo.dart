@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:terera_starter/service/client_sdk_service.dart';
 
 class UserInfo extends StatelessWidget {
   @override
@@ -31,7 +32,7 @@ class UserInfo extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Text(
-                'Rubinaldo Domingos',
+                ClientSdkService.getInstance().atsign,
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.w400,

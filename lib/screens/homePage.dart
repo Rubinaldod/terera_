@@ -43,6 +43,8 @@ class _HomePageState extends State<HomePage> {
                   icon: Icon(Icons.search), label: "Search"),
               BottomNavigationBarItem(
                   icon: Icon(Icons.library_music_outlined), label: "Library"),
+              BottomNavigationBarItem(
+                  icon: Icon(Icons.settings), label: "Settings"),
             ],
           ),
         ),

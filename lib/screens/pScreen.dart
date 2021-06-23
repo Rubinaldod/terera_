@@ -6,7 +6,7 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 3,
+      length: 5,
       child: SafeArea(
         child: Scaffold(
           backgroundColor: Colors.transparent,
@@ -19,6 +19,7 @@ class ProfileScreen extends StatelessWidget {
                   height: 15,
                 ),
                 TabBar(
+                  isScrollable: true,
                   tabs: [
                     Tab(text: 'Overview'),
                     Tab(text: 'Public playlists'),
