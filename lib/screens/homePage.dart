@@ -16,7 +16,7 @@ class _HomePageState extends State<HomePage> {
   int pageIndex = 0;
   List<Widget> pageList = <Widget>[
     Body(),
-    profileScreen(),
+    ProfileScreen(),
   ];
   @override
   Widget build(BuildContext context) {

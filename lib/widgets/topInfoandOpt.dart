@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 
-class topInfoAndOpt extends StatelessWidget {
-  const topInfoAndOpt({
-    Key key,
-  }) : super(key: key);
-
+class TopInfoAndOpt extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(

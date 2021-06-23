@@ -18,7 +18,7 @@ class _ProfilePageState extends State<ProfilePage> {
             child: Center(
               child: Column(
                 children: <Widget>[
-                  topInfoAndOpt(),
+                  TopInfoAndOpt(),
                   Container(
                     child: Row(
                       children: <Widget>[

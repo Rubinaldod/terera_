@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 
-class userInfo extends StatelessWidget {
-  const userInfo({
-    Key key,
-  }) : super(key: key);
-
+class UserInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(

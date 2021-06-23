@@ -6,16 +6,16 @@ import 'package:terera_starter/widgets/userInfo.dart';
 
 import 'pScreen.dart';
 
-class ProfilePage extends StatefulWidget {
+class Profile extends StatefulWidget {
   @override
-  _ProfilePageState createState() => _ProfilePageState();
+  _ProfileState createState() => _ProfileState();
 }
 
-class _ProfilePageState extends State<ProfilePage> {
+class _ProfileState extends State<Profile> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: profileScreen(),
+      home: ProfileScreen(),
     );
   }
 }

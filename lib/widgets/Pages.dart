@@ -14,11 +14,11 @@ class PageScroll extends StatelessWidget {
     return PageView(
       controller: controller,
       children: <Widget>[
-        HomePage(),
-        // Dashboard(),
-        //  ProfilePage(),
         Welcome(),
         LoginScreen(),
+        HomePage(),
+        // Dashboard(),
+        // ProfilePage(),
       ],
     );
   }
