@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:terera_starter/service/client_sdk_service.dart';
 import 'package:terera_starter/widgets/topInfoandOpt.dart';
 
 class ProfilePage extends StatefulWidget {
@@ -48,7 +49,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
                               Text(
-                                'Rubinaldo Domingo',
+                                ClientSdkService.getInstance().atsign,
                                 style: TextStyle(
                                   fontSize: 20,
                                   fontWeight: FontWeight.w400,
