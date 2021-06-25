@@ -337,6 +337,9 @@ class Body extends StatelessWidget {
                   ),
                 ),
               ),
+              SizedBox(
+                height: 50,
+              ),
             ],
           ),
         ),
